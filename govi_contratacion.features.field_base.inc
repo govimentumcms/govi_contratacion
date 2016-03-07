@@ -153,7 +153,7 @@ function govi_contratacion_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'contrataci_n_periodicidad',
+          'vocabulary' => 'periodicidad',
           'parent' => 0,
         ),
       ),

@@ -9,10 +9,10 @@
  */
 function govi_contratacion_taxonomy_default_vocabularies() {
   return array(
-    'contrataci_n_periodicidad' => array(
-      'name' => 'Contratación Periodicidad',
-      'machine_name' => 'contrataci_n_periodicidad',
-      'description' => 'Taxonomia que categoriza la periodicidad de la contratación de la Entidad',
+    'contratacion_clasificacion' => array(
+      'name' => 'Contratación Clasificación',
+      'machine_name' => 'contratacion_clasificacion',
+      'description' => 'Taxonomía que categoriza la clasificación de la contratación de la Entidad',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
@@ -32,10 +32,10 @@ function govi_contratacion_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'contratacion_clasificacion' => array(
-      'name' => 'Contratación Clasificación',
-      'machine_name' => 'contratacion_clasificacion',
-      'description' => 'Taxonomía que categoriza la clasificación de la contratación de la Entidad',
+    'periodicidad' => array(
+      'name' => 'Periodicidad',
+      'machine_name' => 'periodicidad',
+      'description' => 'Taxonomia que categoriza la periodicidad de la contratación de la Entidad',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

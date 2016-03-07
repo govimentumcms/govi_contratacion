@@ -33,6 +33,6 @@ features[field_instance][] = node-contratacion-field_contratacion_fecha_expedic
 features[field_instance][] = node-contratacion-field_contratacion_periodicidad
 features[field_instance][] = node-contratacion-field_contratacion_tipo_recurso
 features[node][] = contratacion
-features[taxonomy][] = contrataci_n_periodicidad
 features[taxonomy][] = contratacion_clasificacion
+features[taxonomy][] = periodicidad
 project path = sites/all/modules/features
