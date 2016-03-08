@@ -220,10 +220,10 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['path'] = 'transparencia/contratacion';
 
-  /* Display: Plan anual de contrataciones */
-  $handler = $view->new_display('page', 'Plan anual de contrataciones', 'page_contratacion_plan_anual_contrataciones');
+  /* Display: Plan anual de adquisiciones */
+  $handler = $view->new_display('page', 'Plan anual de adquisiciones', 'page_contratacion_plan_anual_contrataciones');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Plan anual de contratación';
+  $handler->display->display_options['title'] = 'Plan anual de adquisiciones';
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -264,7 +264,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
     3 => 0,
   );
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'contratacion_clasificacion';
-  $handler->display->display_options['path'] = 'transparencia/contratacion/plan_anual_contrataciones';
+  $handler->display->display_options['path'] = 'transparencia/contratacion/plan-anual-adquisiciones';
 
   /* Display: Información contractual */
   $handler = $view->new_display('page', 'Información contractual', 'page_contratacion_informacion_contractual');
@@ -408,8 +408,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
     t('Fecha de Expedición'),
     t('Has taxonomy term'),
     t('Page'),
-    t('Plan anual de contrataciones'),
-    t('Plan anual de contratación'),
+    t('Plan anual de adquisiciones'),
     t('Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, enim non eleifend eleifend, justo mi pretium arcu, vitae tempor mauris velit vitae quam. Mauris nec ultrices urna, sed ullamcorper tellus. Suspendisse tempor suscipit pretium. Nullam laoreet pretium sem, eget scelerisque arcu malesuada eu. Proin mollis tristique sollicitudin. Quisque tempor consequat lacinia. Pellentesque venenatis sapien vel odio convallis, bibendum consectetur lorem faucibus. Pellentesque non nulla sem. Quisque porttitor enim id sollicitudin ultrices. Donec mauris eros, volutpat ornare laoreet a, dictum eu magna. Sed hendrerit, lorem eu bibendum congue, dolor dolor mollis felis, quis fringilla nunc neque a massa.'),
     t('Información contractual'),
     t('Información de contratación'),

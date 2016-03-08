@@ -18,7 +18,8 @@ function govi_contratacion_content_menu_links_defaults() {
     'link_title' => 'Ejecución de contratos',
     'options' => array(
       'cami' => array(
-        'pages' => '',
+        'pages' => 'transparencia/contratacion/ejecución-contratos/*
+transparencia/contratacion/ejecucion-contratos/',
       ),
       'attributes' => array(),
       'item_attributes' => array(
@@ -97,8 +98,8 @@ function govi_contratacion_content_menu_links_defaults() {
   // Exported menu link: menu-menu-contratacion_plan-anual-de-adquisiciones:transparencia/contratacion/plan_anual_contrataciones
   $menu_links['menu-menu-contratacion_plan-anual-de-adquisiciones:transparencia/contratacion/plan_anual_contrataciones'] = array(
     'menu_name' => 'menu-menu-contratacion',
-    'link_path' => 'transparencia/contratacion/plan_anual_contrataciones',
-    'router_path' => 'transparencia/contratacion/plan_anual_contrataciones',
+    'link_path' => 'transparencia/contratacion/plan-anual-adquisiciones',
+    'router_path' => 'transparencia/contratacion',
     'link_title' => 'Plan anual de adquisiciones',
     'options' => array(
       'cami' => array(
@@ -120,7 +121,6 @@ function govi_contratacion_content_menu_links_defaults() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -50,
-    'customized' => 1,
   );
   // Translatables
   // Included for use with string extractors like potx.
