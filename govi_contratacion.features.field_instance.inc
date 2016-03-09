@@ -131,7 +131,7 @@ function govi_contratacion_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => -4,
     ),
   );
 
@@ -192,9 +192,8 @@ function govi_contratacion_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'node-contratacion-field_contratacion_fecha_expedic'.
-  $field_instances['node-contratacion-field_contratacion_fecha_expedic'] = array(
+  // Exported field_instance: 'node-contratacion-field_contratacion_fecha_exp'.
+  $field_instances['node-contratacion-field_contratacion_fecha_exp'] = array(
     'bundle' => 'contratacion',
     'deleted' => 0,
     'description' => '',
@@ -211,7 +210,7 @@ function govi_contratacion_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 4,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -221,8 +220,8 @@ function govi_contratacion_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_contratacion_fecha_expedic',
-    'label' => 'Fecha de Expedición',
+    'field_name' => 'field_contratacion_fecha_exp',
+    'label' => 'Fecha de Expedicion',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -244,7 +243,7 @@ function govi_contratacion_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 8,
+      'weight' => -3,
     ),
   );
 
@@ -330,7 +329,7 @@ function govi_contratacion_field_default_field_instances() {
   t('Clasificación de la Contratación');
   t('Descripción Contratación');
   t('Enlace');
-  t('Fecha de Expedición');
+  t('Fecha de Expedicion');
   t('Gestione un archivo adjunto.');
   t('Indique la url donde el usuario puede acceder o descargar el documento o recurso.');
   t('Periodicidad');

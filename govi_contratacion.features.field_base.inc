@@ -107,13 +107,13 @@ function govi_contratacion_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_contratacion_fecha_expedic'.
-  $field_bases['field_contratacion_fecha_expedic'] = array(
+  // Exported field_base: 'field_contratacion_fecha_exp'.
+  $field_bases['field_contratacion_fecha_exp'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_contratacion_fecha_expedic',
+    'field_name' => 'field_contratacion_fecha_exp',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -133,7 +133,7 @@ function govi_contratacion_field_default_field_bases() {
       'tz_handling' => 'none',
     ),
     'translatable' => 0,
-    'type' => 'date',
+    'type' => 'datetime',
   );
 
   // Exported field_base: 'field_contratacion_periodicidad'.

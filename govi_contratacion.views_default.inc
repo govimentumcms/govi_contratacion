@@ -33,7 +33,7 @@ function govi_contratacion_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
-      'field' => 'field_contratacion_fecha_expedic',
+      'field' => 'field_contratacion_fecha_exp',
       'rendered' => 1,
       'rendered_strip' => 0,
     ),
@@ -109,12 +109,14 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['fields']['field_contratacion_clasificacion']['table'] = 'field_data_field_contratacion_clasificacion';
   $handler->display->display_options['fields']['field_contratacion_clasificacion']['field'] = 'field_contratacion_clasificacion';
   $handler->display->display_options['fields']['field_contratacion_clasificacion']['exclude'] = TRUE;
-  /* Field: Content: Fecha de Expedición */
-  $handler->display->display_options['fields']['field_contratacion_fecha_expedic']['id'] = 'field_contratacion_fecha_expedic';
-  $handler->display->display_options['fields']['field_contratacion_fecha_expedic']['table'] = 'field_data_field_contratacion_fecha_expedic';
-  $handler->display->display_options['fields']['field_contratacion_fecha_expedic']['field'] = 'field_contratacion_fecha_expedic';
-  $handler->display->display_options['fields']['field_contratacion_fecha_expedic']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_contratacion_fecha_expedic']['settings'] = array(
+  /* Field: Content: Fecha de Expedicion */
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['id'] = 'field_contratacion_fecha_exp';
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['table'] = 'field_data_field_contratacion_fecha_exp';
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['field'] = 'field_contratacion_fecha_exp';
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['label'] = '';
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_contratacion_fecha_exp']['settings'] = array(
     'format_type' => 'anho',
     'fromto' => 'both',
     'multiple_number' => '',
@@ -126,7 +128,6 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -146,7 +147,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '62',
+    0 => '47',
   );
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
@@ -252,7 +253,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '61',
+    0 => '46',
   );
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
@@ -300,7 +301,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '63',
+    0 => '48',
   );
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
@@ -314,8 +315,8 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'contratacion_clasificacion';
   $handler->display->display_options['path'] = 'transparencia/contratacion/informacion_contractual';
 
-  /* Display: Ejecución de Contratacion */
-  $handler = $view->new_display('page', 'Ejecución de Contratacion', 'page_contratacion_ejecucion_contratacion');
+  /* Display: Ejecución de Contratos */
+  $handler = $view->new_display('page', 'Ejecución de Contratos', 'page_contratacion_ejecucion_contratacion');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Ejecución de contratación';
   $handler->display->display_options['defaults']['header'] = FALSE;
@@ -348,7 +349,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    0 => '64',
+    0 => '49',
   );
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
@@ -360,12 +361,18 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
     3 => 0,
   );
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'contratacion_clasificacion';
-  $handler->display->display_options['path'] = 'transparencia/contratacion/ejecucion_contratacion';
+  $handler->display->display_options['path'] = 'transparencia/contratacion/ejecucion_contratos';
 
   /* Display: Manual de Contrataciones */
   $handler = $view->new_display('page', 'Manual de Contrataciones', 'page_contratacion_manual_contrataciones');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Manual de contrataciones';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -375,6 +382,11 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
 
 Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, enim non eleifend eleifend, justo mi pretium arcu, vitae tempor mauris velit vitae quam. Mauris nec ultrices urna, sed ullamcorper tellus. Suspendisse tempor suscipit pretium. Nullam laoreet pretium sem, eget scelerisque arcu malesuada eu. Proin mollis tristique sollicitudin. Quisque tempor consequat lacinia. Pellentesque venenatis sapien vel odio convallis, bibendum consectetur lorem faucibus. Pellentesque non nulla sem. Quisque porttitor enim id sollicitudin ultrices. Donec mauris eros, volutpat ornare laoreet a, dictum eu magna. Sed hendrerit, lorem eu bibendum congue, dolor dolor mollis felis, quis fringilla nunc neque a massa.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Fecha de Expedicion -  start date (field_contratacion_fecha_exp) */
+  $handler->display->display_options['sorts']['field_contratacion_fecha_exp_value']['id'] = 'field_contratacion_fecha_exp_value';
+  $handler->display->display_options['sorts']['field_contratacion_fecha_exp_value']['table'] = 'field_data_field_contratacion_fecha_exp';
+  $handler->display->display_options['sorts']['field_contratacion_fecha_exp_value']['field'] = 'field_contratacion_fecha_exp_value';
   $handler->display->display_options['path'] = 'transparencia/contratacion/manual_contrataciones';
   $translatables['contratacion'] = array(
     t('Master'),
@@ -405,7 +417,6 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
     t('Descargar documento'),
     t('Tipo de Recurso'),
     t('Clasificación de la Contratación'),
-    t('Fecha de Expedición'),
     t('Has taxonomy term'),
     t('Page'),
     t('Plan anual de adquisiciones'),
@@ -415,7 +426,7 @@ Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, en
     t('Quisque vel tortor sed lectus hendrerit eleifend. Suspendisse velit libero, placerat eleifend cursus eu, condimentum non dolor. Duis nulla purus, tempus eu ultrices ac, venenatis eget leo. Curabitur mi dui, posuere sed leo sed, blandit feugiat justo. Cras semper commodo orci sagittis suscipit.
 
 Donec sed orci tincidunt, dapibus quam vel, ultricies arcu. Phasellus semper, enim non eleifend eleifend, justo mi pretium arcu, vitae tempor mauris velit vitae quam. Mauris nec ultrices urna, sed ullamcorper tellus. Suspendisse tempor suscipit pretium. Nullam laoreet pretium sem, eget scelerisque arcu malesuada eu. '),
-    t('Ejecución de Contratacion'),
+    t('Ejecución de Contratos'),
     t('Ejecución de contratación'),
     t('Manual de Contrataciones'),
     t('Manual de contrataciones'),

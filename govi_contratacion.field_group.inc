@@ -54,7 +54,7 @@ function govi_contratacion_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_contratacion_descripcion',
-      1 => 'field_contratacion_fecha_expedic',
+      1 => 'field_contratacion_fecha_exp',
       2 => 'title',
     ),
     'format_type' => 'fieldset',
@@ -84,9 +84,9 @@ function govi_contratacion_field_group_info() {
     'label' => 'Recurso',
     'weight' => '2',
     'children' => array(
-      0 => 'field_contratacion_tipo_recurso',
+      0 => 'field_contratacion_adjunto',
       1 => 'field_contratacion_enlace',
-      2 => 'field_contratacion_adjunto',
+      2 => 'field_contratacion_tipo_recurso',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

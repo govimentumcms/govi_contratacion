@@ -47,7 +47,10 @@ transparencia/contratacion/ejecucion-contratos/',
     'link_title' => 'Información contractual',
     'options' => array(
       'cami' => array(
-        'pages' => '',
+        'pages' => 'transparencia/contratacion/informacion_contractual
+transparencia/contratacion/informacion-contractual
+transparencia/contratacion/informacion_contractual/*
+transparencia/contratacion/informacion-contractual/*',
       ),
       'attributes' => array(),
       'item_attributes' => array(
@@ -67,40 +70,11 @@ transparencia/contratacion/ejecucion-contratos/',
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: menu-menu-contratacion_manual-de-contratacin:transparencia/contratacion/manual_contratacion.
-  $menu_links['menu-menu-contratacion_manual-de-contratacin:transparencia/contratacion/manual_contratacion'] = array(
-    'menu_name' => 'menu-menu-contratacion',
-    'link_path' => 'transparencia/contratacion/manual_contratacion',
-    'router_path' => 'transparencia/contratacion',
-    'link_title' => 'Manual de contratación',
-    'options' => array(
-      'cami' => array(
-        'pages' => '',
-      ),
-      'attributes' => array(),
-      'item_attributes' => array(
-        'data-inner-width' => '',
-        'data-inner-height' => '',
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'menu-menu-contratacion_manual-de-contratacin:transparencia/contratacion/manual_contratacion',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Ejecución de contratos');
   t('Información contractual');
-  t('Manual de contratación');
 
   return $menu_links;
 }

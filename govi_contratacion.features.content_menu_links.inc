@@ -47,7 +47,10 @@ transparencia/contratacion/ejecucion-contratos/',
     'link_title' => 'Información contractual',
     'options' => array(
       'cami' => array(
-        'pages' => '',
+        'pages' => 'transparencia/contratacion/informacion_contractual
+transparencia/contratacion/informacion-contractual
+transparencia/contratacion/informacion_contractual/*
+transparencia/contratacion/informacion-contractual/*',
       ),
       'attributes' => array(),
       'item_attributes' => array(
@@ -70,12 +73,13 @@ transparencia/contratacion/ejecucion-contratos/',
   // Exported menu link: menu-menu-contratacion_manual-de-contratacin:transparencia/contratacion/manual_contratacion
   $menu_links['menu-menu-contratacion_manual-de-contratacin:transparencia/contratacion/manual_contratacion'] = array(
     'menu_name' => 'menu-menu-contratacion',
-    'link_path' => 'transparencia/contratacion/manual_contratacion',
-    'router_path' => 'transparencia/contratacion',
-    'link_title' => 'Manual de contratación',
+    'link_path' => 'transparencia/contratacion/manual_contrataciones',
+    'router_path' => 'transparencia/contratacion/manual_contrataciones',
+    'link_title' => 'Manual de contrataciones',
     'options' => array(
       'cami' => array(
-        'pages' => '',
+        'pages' => 'transparencia/contratacion/manual_contrataciones
+transparencia/contratacion/manual_contrataciones/*',
       ),
       'attributes' => array(),
       'item_attributes' => array(
@@ -93,17 +97,19 @@ transparencia/contratacion/ejecucion-contratos/',
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -49,
-    'customized' => 1,
   );
   // Exported menu link: menu-menu-contratacion_plan-anual-de-adquisiciones:transparencia/contratacion/plan_anual_contrataciones
   $menu_links['menu-menu-contratacion_plan-anual-de-adquisiciones:transparencia/contratacion/plan_anual_contrataciones'] = array(
     'menu_name' => 'menu-menu-contratacion',
     'link_path' => 'transparencia/contratacion/plan-anual-adquisiciones',
-    'router_path' => 'transparencia/contratacion',
+    'router_path' => 'transparencia/contratacion/plan-anual-adquisiciones',
     'link_title' => 'Plan anual de adquisiciones',
     'options' => array(
       'cami' => array(
-        'pages' => '',
+        'pages' => 'transparencia/contratacion/plan-anual-adquisiciones
+transparencia/contratacion/plan-anual-adquisiciones/*
+transparencia/contratacion/plan_anual_adquisiciones
+transparencia/contratacion/plan_anual_adquisiciones/*',
       ),
       'attributes' => array(),
       'item_attributes' => array(
@@ -126,7 +132,7 @@ transparencia/contratacion/ejecucion-contratos/',
   // Included for use with string extractors like potx.
   t('Ejecución de contratos');
   t('Información contractual');
-  t('Manual de contratación');
+  t('Manual de contrataciones');
   t('Plan anual de adquisiciones');
 
 
