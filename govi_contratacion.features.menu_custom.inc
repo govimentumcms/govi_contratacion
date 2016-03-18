@@ -13,12 +13,12 @@ function govi_contratacion_menu_default_menu_custom() {
   // Exported menu: menu-menu-contratacion.
   $menus['menu-menu-contratacion'] = array(
     'menu_name' => 'menu-menu-contratacion',
-    'title' => 'Menú Contratación',
+    'title' => 'Contratación',
     'description' => 'Navegación para la clasificación de los documentos de la contratación de la Entidad',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Menú Contratación');
+  t('Contratación');
   t('Navegación para la clasificación de los documentos de la contratación de la Entidad');
 
   return $menus;
