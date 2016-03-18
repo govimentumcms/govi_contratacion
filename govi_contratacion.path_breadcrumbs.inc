@@ -31,7 +31,7 @@ function govi_contratacion_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -74;
+  $path_breadcrumb->weight = -68;
   $export['contrataci_n_plan_anual_de_contrataciones'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -53,7 +53,7 @@ function govi_contratacion_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -72;
+  $path_breadcrumb->weight = -67;
   $export['contratacion'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -77,7 +77,7 @@ function govi_contratacion_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -77;
+  $path_breadcrumb->weight = -71;
   $export['contratacion_ejecucion_contratos'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -101,7 +101,7 @@ function govi_contratacion_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -76;
+  $path_breadcrumb->weight = -70;
   $export['contratacion_informacion_contractual'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -125,7 +125,7 @@ function govi_contratacion_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -75;
+  $path_breadcrumb->weight = -69;
   $export['contratacion_manual_de_contrataciones'] = $path_breadcrumb;
 
   return $export;

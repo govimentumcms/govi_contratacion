@@ -25,17 +25,6 @@ function govi_contratacion_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
-    'node_taxonomy' => array(
-      'values' => array(
-        61 => 61,
-        62 => 62,
-        63 => 63,
-        64 => 64,
-      ),
-      'options' => array(
-        'node_form' => '1',
-      ),
-    ),
     'path' => array(
       'values' => array(
         'transparencia/contratacion/*' => 'transparencia/contratacion/*',
