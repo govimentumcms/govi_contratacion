@@ -32,9 +32,9 @@ function govi_contratacion_views_api($module = NULL, $api = NULL) {
 function govi_contratacion_node_info() {
   $items = array(
     'contratacion' => array(
-      'name' => t('Contratación'),
+      'name' => t('8. Contratación'),
       'base' => 'node_content',
-      'description' => t('Utilice este tipo de contenido para gestionar y clasificar los documentos relacionados con la Contratación de la Entidad'),
+      'description' => t('Con este tipo de contenido puede gestionar Información contractual, Ejecución de contratos, Procedimientos, lineamientos y políticas en materia de adquisición y compras, y Plan Anual de Adquisiciones de la Entidad'),
       'has_title' => '1',
       'title_label' => t('Nombre'),
       'help' => '',
